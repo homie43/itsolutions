@@ -1,13 +1,223 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 864px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  border-radius: 0px 0px 0px 10px;
+  height: 70px;
+}
+
+.header__wrapper {
+  margin-left: 84px;
+}
+
+.info__tel,
+.info__email {
+  font-size: 14px;
+  position: relative;
+}
+
+.info__tel span,
+.info__email span {
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  top: 5px;
+}
+
+.info__tel a,
+.info__email a {
+  padding-left: 27px;
+}
+
+.nav {
+  padding: 12px 25px 6px 134px;
+  top: 0;
+  right: 0;
+  height: 94px;
+  width: 740px;
+  border-radius: 0px 0px 0px 270px;
+}
+
+.nav__menu {
+  margin-top: 18px;
+  width: 540px;
+  font-size: 12px;
+}
+
+.nav__lang {
+  margin-left: 17px;
+  margin-top: 18px;
+}
+
+/* contact */
+
+.contact {
+  margin-top: 77px;
+  padding-left: 82px;
+}
+
+.contact__img {
+  right: 0;
+  top: 48px;
+}
+
+.contact__title {
+  padding-left: 164px;
+}
+
+.form__wrapper {
+  max-width: 495px;
+  /* margin-left: 82px; */
+  padding-left: 30px;
+  margin-top: 38px;
+  height: 115px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(3, 20px);
+  grid-column-gap: 30px;
+  grid-row-gap: 18px;
+}
+
+.contact__form label {
+  font-size: 10px;
+  color: #0d2444;
+  background-color: #fff;
+  font-size: 10px;
+  display: block;
+  position: absolute;
+  margin-bottom: 0;
+  top: -4px;
+  padding: 0 5px;
+  left: 7px;
+}
+
+.contact__input {
+  position: relative;
+}
+
+.contact__input input {
+  width: 100%;
+  font-size: 9px;
+  height: 100%;
+  padding: 2px 11px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact__input span {
+  border-radius: 3px;
+  background: #a6c34f;
+  width: 3px;
+  height: 3px;
+  right: -2px;
+  top: 2px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 1px solid #a6c34f;
+  background: #a6c34f;
+  margin-top: 3px;
+  font-size: 10px;
+}
+.contact__btn {
+  width: 361px;
+  height: 29px;
+}
+
+.contact__wrapper-other {
+  margin-top: 24px;
+  max-width: 385px;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 162px 189px;
+  grid-template-rows: repeat(2, 22px) 58px;
+  grid-column-gap: 33px;
+  grid-row-gap: 23px;
+}
+
+.contact__policy span {
+  text-align: center;
+  font-size: 10px;
+  width: 100%;
+  line-height: 12px;
+}
+
+.contact__policy {
+  width: 360px;
+  margin-left: 30px;
+  margin-top: 21px;
+}
+
+.contact__policy input {
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact__policy a {
+  color: #a6c34f;
+}
+
+.form__btn {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 189.9px;
+  height: 22.149px;
+  position: absolute;
+  left: 193px;
+}
+
+/* advantage */
+
+.advantage {
+  margin-top: 74px;
+  margin-right: 66px;
+}
+
+.advantage__wrapper {
+  width: 545px;
+}
+
+.advantage__text {
+  width: 530px;
+}
+.advantage__text p {
+  margin-top: 7px;
+  font-size: 12px;
+  height: 44px;
+}
+
+.swiper-slide .advantage__card {
+  width: 183px;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid #9cc634;
+  background: #fefffb;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.advantage__slider {
+  margin-top: 17px;
+  width: 555px;
+  height: 290px;
+}
+
+.swiper-slide-active .advantage__card {
+  height: 265px;
+}
+
+.advantage__card h2 {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.advantage__card p {
+  font-size: 12px;
+  padding: 7px 8px 41px 8px;
 }
